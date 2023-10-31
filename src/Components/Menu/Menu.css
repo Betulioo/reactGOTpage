@@ -1,0 +1,23 @@
+.menulogos{
+    display:flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 6%;
+    gap: 20px;
+}
+.spain{
+    border-radius: 5px;
+    /* height: 40px; */
+    width: 55px;
+    min-width: 32px;
+    display: flex;
+    margin-right: 5%;
+}
+.uk{
+    border-radius: 5px;
+    /* height: 40px; */
+    width: 55px;
+    min-width: 32px;
+    display: flex;
+    margin-right: 5%;
+}
