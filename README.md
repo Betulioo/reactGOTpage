@@ -54,7 +54,4 @@ Utilize the JSON Server for mock API endpoints during development.
 Internationalization (i18n)
 The project supports internationalization through the translations directory. Translation files are organized by language, allowing for easy integration of multiple languages into the application.
 
-License
-This project is licensed under the MIT License.
-
 Thank you for using and contributing to our React project! If you have any questions or need assistance, feel free to reach out to us. Happy coding!
