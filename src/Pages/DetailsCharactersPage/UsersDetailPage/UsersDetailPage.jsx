@@ -9,7 +9,7 @@ const UsersDetailPage = () => {
   const [foundCharacter, setfoundCharacter] = useState({});
   const { id } = useParams();
   const getCharacters = async () => {
-    const results = await axios(`http://localhost:3020/characters`);
+    const results = await axios(`https://game-of-thrones-json-server.vercel.app/characters`);
     // console.log(results)
     setCharacters(results.data);
   };

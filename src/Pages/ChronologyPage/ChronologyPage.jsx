@@ -20,7 +20,7 @@ function ChronologyPage() {
     };
 ;
   const getCharacter = async () => {
-    const res = await axios("http://localhost:3020/characters");
+    const res = await axios("https://game-of-thrones-json-server.vercel.app/characters");
     const charactersData = res.data
 
     if (ascendente) {

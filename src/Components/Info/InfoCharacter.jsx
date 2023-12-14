@@ -18,7 +18,7 @@ const InfoCharacter = ({
   const [houses, setHouses] = useState([]);
   const [houseFound, setHouseFound] = useState({});
   const getHouses = async () => {
-    const results = await axios(`http://localhost:3020/houses`);
+    const results = await axios(`https://game-of-thrones-json-server.vercel.app/houses`);
     // console.log(results)
   setHouses(results.data);
   };
@@ -53,7 +53,7 @@ const InfoCharacter = ({
             <figure className="img-figure">
           <img
             className="img-character"
-            src={`http://localhost:3020/${image}`}
+            src={`https://game-of-thrones-json-server.vercel.app/${image}`}
             alt=""
           />
         </figure>
@@ -66,7 +66,7 @@ const InfoCharacter = ({
         <h3>{t('translated-CASA')}</h3>
         <img
             className="img-house"
-            src={`http://localhost:3020/${houseFound ? houseFound.image : ''}`}
+            src={`https://game-of-thrones-json-server.vercel.app/${houseFound ? houseFound.image : ''}`}
             alt=""
           />
 

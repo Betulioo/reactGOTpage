@@ -14,7 +14,7 @@ export default function DetailsHousesPage() {
   useEffect(() => {
     const getHouseDetails = async () => {
       try {
-        const { data } = await axios.get(`http://localhost:3020/houses/${id}`);
+        const { data } = await axios.get(`https://game-of-thrones-json-server.vercel.app/houses/${id}`);
         setHouse(data);
       } catch (error) {
         console.error(error);
@@ -36,7 +36,7 @@ export default function DetailsHousesPage() {
     {/* <MenuConCasa/> */}
       <img
         className="DetailshouseImage"
-        src={`http://localhost:3020/${house.image}`}
+        src={`https://game-of-thrones-json-server.vercel.app/${house.image}`}
         alt={house.name}
       />
        <h1 className="DetailshouseName">{house.name}</h1>

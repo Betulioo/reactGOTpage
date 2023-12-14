@@ -15,7 +15,7 @@ export default function HousesPage(){
     useEffect(() => {
         const getData = async function(){
             try {
-                const { data } = await axios.get("http://localhost:3020/houses");
+                const { data } = await axios.get("https://game-of-thrones-json-server.vercel.app/houses");
                 setHouses(data);
                 setHousesFilter(data);
             } catch (error){
@@ -42,7 +42,7 @@ export default function HousesPage(){
         </div>
             <div className="housesListContainer">
                 <ul className="housesHousesList">
-                    {housesFilter.map((house) => (<div className="housesHousesContainer" key={house.id}><Link to={`/houses/${house.id}`}><img className="housesHousesFlags" src={`http://localhost:3020/${house.image}`} alt={house.name}/></Link> <h5 className="housesHousesNames">{house.name}</h5></div>))}
+                    {housesFilter.map((house) => (<div className="housesHousesContainer" key={house.id}><Link to={`/houses/${house.id}`}><img className="housesHousesFlags" src={`https://game-of-thrones-json-server.vercel.app/${house.image}`} alt={house.name}/></Link> <h5 className="housesHousesNames">{house.name}</h5></div>))}
                 </ul>
             </div>
         

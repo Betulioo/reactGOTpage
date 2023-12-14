@@ -17,7 +17,7 @@ export default function CharacterPages() {
   useEffect(() => {
     const getCharacters = async () => {
       try {
-        const { data } = await axios.get("http://localhost:3020/characters");
+        const { data } = await axios.get("https://game-of-thrones-json-server.vercel.app/characters");
         setCharacters(data);
         setCharactersFilter(data);
       } catch (error) {
@@ -52,7 +52,7 @@ export default function CharacterPages() {
             <Link to={`/characters/${character.id}`}>
               <img
               className="charactersImgCharacters"
-              src={`http://localhost:3020/${character.image}`}
+              src={`https://game-of-thrones-json-server.vercel.app/${character.image}`}
               alt={character.name}/> 
             </Link>
             <div className="hover-info"></div>
